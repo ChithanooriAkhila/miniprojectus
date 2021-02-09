@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTP Login Page</title>
+    <link rel="stylesheet" href="../css files/login.css">
+    <style>
+        #but{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <div class="login">
+        <h1>Login</h1>
+        <form>
+            <input type="text" id="email" placeholder="Email Address" required="required" />
+            <input type="password" id="pwd" placeholder="Password" required="required" />
+            <button type="button" id="loginsubmit" value="submit" class="btn btn-primary btn-block btn-large" onclick="verifydetails()"><a>SUBMIT</a></button>
+            <input type="button"  class="btn btn-primary btn-block btn-large" id="but" onclick="location.href='role.html'" value="BACK">
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+    <script src="../js files/login.js"></script>
+    <script>
+        var input = document.getElementById("body");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("loginsubmit").click();
+          }
+        });
+        </script>
+        
+
+</body>
+</html>

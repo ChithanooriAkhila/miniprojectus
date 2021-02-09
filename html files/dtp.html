@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #iframeDisplay{
+          
+           margin-left: 40px;
+          
+           
+        }
+
+        .bb{
+            margin-left: 80px;
+            margin-top: 50px;
+            padding: 20px 5px;
+            display: inline-block;
+            float: left;
+            font-family: cursive;
+            font-style: italic;
+            color: black;
+            background-color: transparent;
+        }
+        body{
+            background-color:darkslategray;
+        }
+        .button{
+            height:40px;
+            width:100px;
+            font-size: 15px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+        }
+        #but{
+            margin-left:900px;
+        }
+
+    </style>
+</head>
+<body>
+        <p id="school-name" style="color: white;text-align: center;font-size: 40px;
+    "></p><input type="button" class="button" id="but" onclick="location.href='login.html'" value="LOG OUT">
+        <div class="bb">
+            
+            <input type="button" class="button" id="add-btn" value="ADD" onclick="displayIframe()"><br><br>
+            <input type="button" class="button" id="upd-btn" value="UPDATE" onclick="displayIframe1()"><br><br>
+            <input type="button" class="button" id="view-btn" value="VIEW" onclick="displayIframe2()"><br><br>
+        </div>
+          <div id="iframeDisplay"></div>  
+        <script>
+            function displayIframe() {
+                var schoolname=localStorage.getItem("schoolname");
+                document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"stuadd.html\" height=\"645\" width=\"1100\" ></iframe>";
+            }
+            function displayIframe1() {
+                var schoolname=localStorage.getItem("schoolname");                
+                document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"stuupdate.html\" height=\"645\" width=\"1100\" ></iframe>";
+            }
+            function displayIframe2() {
+                    document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"stuview.html\" height=\"645\" width=\"1100\" ></iframe>";
+            }
+        </script>
+        
+        <script src="../js files/dtp.js"></script>
+</body>
+</html>

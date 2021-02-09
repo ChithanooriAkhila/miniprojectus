@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Profile</title>
+   <link rel="stylesheet" href="../css files/prof.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body Align="center" >
+    <div class="container">
+<div class="heading">
+    <a href="login1.html"><i class="fa fa-arrow-circle-left" style="font-size:60px;color:white ; "aria-hidden="true"></i></a>
+    <h1 id="sname"></h1>
+</div>
+<div class="menubar">
+<ul>
+<li><a href="faculty.html">faculty</a></li>
+<li><a href="stuview.html">students</a></li>
+<li><a href="analytics.html">Analytics</a></li>
+<li><a href="Achievements.html">Achievements</a></li>
+</ul>
+</div>
+<div class="content">
+  <p>
+    Address	Post Mamring, Via Pakyong, East-Sikkim, 737106, Mamring, East-Sikkim, Sikkim, India
+    27.2265922°N 88.6267828°E
+</p>
+</div>
+<div class="notification">
+    <h4>Notifications!!!</h4>
+    
+    <marquee Direction="up" SCROLLDELAY="200" onmouseover="STOP()" onmouseout="START()">
+    <ul>
+        <li>Results</li>
+        <li>Fest dates
+        </li>
+        <li>State level chess championship</li>
+    </ul>
+    </marquee>
+</div>
+<div class="Footer">
+    <h3>@copyrights</h3>
+</div>
+    </div>
+    <script>
+        var sname=localStorage.getItem('schoolname');
+        document.getElementById('sname').innerHTML=sname;
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body{
+    background-image: url("../images/dist.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+    font-family: cursive;
+    font-style: italic;
+    
+}
+.fo{
+    margin-left: 550px;
+    margin-top: 200px;
+    font-size: 20px;
+    font-family: cursive;
+    color:yellowgreen;
+}
+.fo input{
+    background-color: transparent;
+    border-style: groove;
+    border-color: ivory;
+    color:white;
+}
+.fo input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+    </style>
+</head>
+<body id="body">
+    <a href="login1.html"><i class="fa fa-arrow-circle-left" style="font-size:60px;color:blue ; "aria-hidden="true"></i></a>
+<div class="fo">
+   School id:<br><input type="text" id="scid">
+   
+   <button class="button" id="but" onclick="verify()">submit</button>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+    <script src="../js files/dist.js"></script>
+    <script>
+        var input = document.getElementById("body");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("but").click();
+        }
+        });
+     </script>
+
+</body>
+</html>

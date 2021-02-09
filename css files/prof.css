@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  
+    background-color: #cccccc;
+}
+.container{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color:lightblue;
+}
+.heading{
+    border: 2px solid black;
+    background-color:royalblue;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 90px;
+    color:black;
+}
+.menubar ul{
+    list-style: none;
+}
+.menubar ul li{
+    height: 50px;
+    background:olivedrab;
+    width: 225px;
+    border-bottom: 1px solid black;
+    line-height: 50px;
+    float: left;
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+}
+.menubar ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    font-family: cursive;
+    font-style: italic;
+    color: black;
+}
+.menubar ul a:hover{
+    background-color: rgh(255,0,191);
+    border-radius: 8px;
+
+}
+.content{
+    width: 550px;
+    height:350px;
+    background-color: darkgray;
+    border: 2px solid black;
+    float: left;
+    background-size: cover;
+}
+.content p{
+    margin-left: 170px;
+    color: black;
+    margin-top: 30px;
+    font-family: cursive;
+    font-style: italic;
+    width: 20%;
+    height:60%;
+    font-size: 18px;
+}
+.notification{
+    height:350px;
+    width: 330px;
+    float: left;
+    background-color:rosybrown;
+    border: 2px solid black;
+    font-size: 15px;
+    font-family: cursive;
+    font-style: italic;
+    color: chartreuse;
+
+}
+.notification h4{
+    text-align:center;
+    font-size: 35px;
+    color: black;
+    margin: bottom;
+    font-family: cursive;
+    font-style: italic;
+}
+.footer{
+    width: 900px;
+    height: 50px;
+    float: left;
+}
+.footer h3{
+    font-size: 35px;
+    text-align: center;
+    line-height: 50px;
+    background-color: orchid;
+}

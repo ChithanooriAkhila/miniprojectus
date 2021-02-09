@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Official lofin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color:darkolivegreen;
+        }
+.ff{
+margin-left: 550px;
+margin-top: 250px;
+color:black;
+font-family: cursive;
+font-style: italic;
+}
+.ff input{
+    background-color: ivory;
+    border-width: thin;
+    border-width: 2px;
+}
+a{
+    text-decoration: none;
+    font-family: cursive;
+    font-style: italic;
+}
+
+
+    </style>
+</head>
+<body>
+    <a href="login2.html"><i class="fa fa-arrow-circle-left" style="font-size:60px;color:white; "aria-hidden="true"></i></a>
+    <div class="ff">
+   District id:<br><input type="text" id="did"><br>
+ <br>  School id:<br><input type="text" id="sid"><br>
+  <br> 
+  <input type="button" value="submit" onclick="verifydetails()">
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+    <script src="../js files/state.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> 
+    </script>
+<style>
+table {
+    border-collapse: collapse;
+    background-color: transparent;
+    margin: 20px;
+    font-family: cursive;
+    font-style: italic;
+    border-style: groove;
+    border-color: black;
+}
+th{
+    border: 1px solid black;
+    padding: 5px; 
+    color: black; 
+}
+td{
+    border: 1px solid black;
+    text-align: left;
+ 
+}
+input{
+    padding:5px 5px;
+    font-family: cursive;
+    font-style: italic;
+    background-color: transparent;
+}
+
+body{
+    background-color:lightyellow;
+}
+.button {
+    background-color:lightslategrey;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding: 10px;
+}
+.option{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: cursive;
+    font-style: italic;
+    color: ivory;
+}
+</style>
+</head>
+<body>
+    <div class="cointaner-fluid">
+        <div class="container">
+            <div id="topview" style="text-align: center;font-size: 20px;">
+                Choose class to be viewed:
+                <select class="option" id="class">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    
+                </select>
+            </div>
+            <!--<a><i class="fa fa-refresh fa-spin" aria-hidden="true" style="font-size:60px;margin-left:20px;color:black"></i></a>-->
+            <button class="button" id="btn" onclick="viewData()" >submit</button><br>
+ 
+            <div class="row">
+                <div class="col-sm-12 column">
+                    <table>
+                        <thead>
+                            <tr id="a">
+                                <th id="a1">Roll No<br></th>
+                                <th id="a2">Name <br></th>
+                                <th id="a3">DOB <br> </th>
+                                <th id="a4">Gender <br></th>
+                                <th id="a5">Caste<br></th>
+                                <th id="a6">Father's Name <br</th>
+                                <th id="a8">Mother's Name <br</th>
+                                <th id="a10">Mobile number<br></th>
+                                <th id="a12">Attendance <br></th>
+                                <th id="a13">Marks<br></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+ <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+ <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+ <!-- Add Firebase products that you want to use -->
+ <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+ <script src="../js files/stuview.js"></script> 
+</body>
+</html>

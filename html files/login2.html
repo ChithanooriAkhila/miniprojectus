@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css files/login2.css">
+    <style>
+        #but{
+            margin-top:10px;
+        }
+        h1{
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="login">
+        <h1>State Official Login</h1>
+        <form>
+            <input type="text" id="email"name="u" placeholder="enter your email" required="required" />
+            <input type="password" id="pwd" name="p" placeholder="Password" required="required" />
+            <input type="button" value="SUBMIT" onclick="verifydetails()" class="btn btn-primary btn-block btn-large">
+            <input type="button"  class="btn btn-primary btn-block btn-large" id="but" onclick="location.href='role.html'" value="BACK">
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+    <script src="../js files/login2.js"></script>
+    <script>
+        var input = document.getElementById("body");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("but").click();
+          }
+        });
+        </script>
+    
+</body>
+</html>

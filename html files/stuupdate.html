@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dtp </title>
+    <style>
+        body{
+
+background-image: url("stuadd.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+        }
+
+.con{
+    
+    margin-left: 1px;
+    padding: 25px 25px;
+  
+    margin-top: 5px;
+    font-size: 15px;
+    color: azure;
+    font-family: cursive;
+    
+    
+    margin-right: 460px;
+    
+    font-weight: bold;
+}
+.con input{
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: 1px;
+    background-color:lightgrey;
+
+    
+}
+h1{
+    margin-left:2px;
+    font-family:cursive;
+    color:whitesmoke;
+
+}
+/*span{
+    float:left;
+}*/
+
+
+        
+    </style>
+</head>
+<body class="body">
+    <h1>STUDENT DETAILS</h1>
+    <div class="con">
+    <div class="form">
+        <pre>
+        <label for="Class">Class:</label>
+        <select id="Class" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br>
+        <label for="RollNumber">Roll Number:</label>
+        <input type="text" id="RollNumber"required="required"><br>
+        <label for="Field">Field:</label>
+        <select id="Field" >
+            <option value="student_name">student_name</option>
+            <option value="father_name">father_name</option>
+            <option value="mother_name">mother_name</option>
+            <option value="marks">marks</option>
+            <option value="attendance">attendance</option>
+            <option value="gender">gender</option>
+            <option value="dob">dob</option>
+            <option value="mobileno">mobileno</option>
+            <option value="cast">cast</option>            
+        </select>
+        <span>
+        <label for="value">Value:</label>
+        <input type="text" id="value"required="required"><br>
+        </span>
+        <input type="button" value="UPDATE" onclick="update()" id="re" style="height: 30px;width: 70px;background-color:red;"><br>
+        <!--<p id="status"></p>-->
+        </pre>
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+    <script src="../js files/stuupdate.js"></script>
+</body>
+</html>

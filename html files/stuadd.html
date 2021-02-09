@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dtp </title>
+    <style>
+        body{
+
+background-image: url("stuadd.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+        }
+
+.con{
+    
+    margin-left: 1px;
+    padding: 25px 25px;
+  
+    margin-top: 5px;
+    font-size: 15px;
+    color: azure;
+    font-family: cursive;
+    
+    
+    margin-right: 460px;
+    
+    font-weight: bold;
+}
+.con input{
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: 1px;
+    background-color:lightgrey;
+
+    
+}
+h1{
+    margin-left:2px;
+    font-family:cursive;
+    color:whitesmoke;
+
+}
+
+
+        
+    </style>
+</head>
+<body class="body">
+    <h1>STUDENT DETAILS</h1>
+    <div class="con">
+    <div class="form">
+        <form>
+        <pre>
+        <label for="class">Class:</label>
+        <select id="class" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select><br>
+
+        <label for="RollNumber">Roll Number:</label>
+        <input type="number" id="RollNumber" required="required"><br>
+
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" required="required"><br>
+
+        <label for="dob">dob:</label>
+        <input type="date" id="dob" required="required"><br>
+
+        <label for="Gender">Gender:</label><br>
+        <select id="Gender" required="required">
+            <option value="female">female</option>
+            <option value="male">male</option>
+            <option value="other">other</option>
+          </select><br>
+
+        <label for="Cast">Cast:</label>
+        <input type="text" id="Cast" required="required"><br>
+
+        <label for="FathersName">Fathers Name:</label>
+        <input type="text" id="FathersName" required="required"><br>
+
+        <label for="MotherName">Mother Name:</label>
+        <input type="text" id="MotherName" required="required"><br>
+
+        <label for="Moblie Number">Moblie Number:</label>
+        <input type="tel" id="MoblieNumber" required="required"><br>
+
+        <label for="Attendance">Attendance:</label>
+        <input type="number" id="Attendance" required="required"><br>
+
+        <label for="Marks">Marks:</label>
+        <input type="number" id="Marks" required="required"><br>
+        
+        <input type="button" value="submit" onclick="storeDetails()" id="re" style="height: 30px;width: 60px;background-color:red;"><br>
+        <p id="status"></p>
+        </pre>
+        </form>
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+    <script src="../js files/stuadd.js"></script>
+</body>
+</html>
